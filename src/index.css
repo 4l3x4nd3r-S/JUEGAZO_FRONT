@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Paleta Juegazo - Tema Claro */
+    --juegazo-primary: #7CB342;
+    --juegazo-primary-dark: #689F38;
+    --juegazo-secondary: #FF9800;
+    --juegazo-accent: #E91E63;
+    --juegazo-success: #4CAF50;
+    --juegazo-warning: #FF9800;
+    --juegazo-error: #F44336;
+    --juegazo-whatsapp: #25D366;
+    
+    /* Variables CSS existentes - Tema Claro */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 38%;
+
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+  }
+  
+  .dark {
+    /* Paleta Juegazo - Tema Oscuro */
+    --juegazo-primary: #8BC34A;
+    --juegazo-primary-dark: #689F38;
+    --juegazo-secondary: #FF9800;
+    --juegazo-accent: #E91E63;
+    --juegazo-success: #4CAF50;
+    --juegazo-warning: #FF9800;
+    --juegazo-error: #F44336;
+    --juegazo-whatsapp: #25D366;
+    
+    /* Variables CSS existentes - Tema Oscuro */
+    --background: 0 0% 10%; /* #1A1A1A */
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 18%; /* #2D2D2D */
+    --card-foreground: 0 0% 96%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 38%; /* #616161 */
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+}
+
+.container-edge {
+  @apply mx-auto w-full max-w-8xl px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-card text-cardForeground border border-border rounded-2xl shadow-soft;
+}
